@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Grails Doc to Japanese",
+  "description": "Automatically redirect to Japanese translated site when opening grails.org/doc/latest",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://grails.org/doc/latest/*"],
+      "js": ["contentscript.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
